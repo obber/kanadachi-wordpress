@@ -1245,6 +1245,46 @@ Content Area
 	background-color: #eee;
 }
 
+/* In-post Styles
+--------------------------------------------- */
+
+.note {
+	padding: 15px;
+	margin-bottom: 26px;
+}
+
+.note p:first-child {
+	display: none;
+}
+
+.note p:last-child {
+	display: none;
+}
+
+.note > *:nth-last-child(2) {
+	margin-bottom: 0;
+}
+
+.note-blue {
+	background-color: #E6F5FA;
+	border: 1px solid #D8E8ED;
+}
+
+.note-red {
+	background-color: #F7E4E4;
+	border: 1px solid #EDD8D8;
+}
+
+.note-yellow {
+	background-color: #F7F6E4;
+	border: 1px solid #EDECDD;
+}
+
+.note-green {
+	background-color: #E4F7E7;
+	border: 1px solid #D8EBDB;
+}
+
 /*
 Custom Post Types
 ---------------------------------------------------------------------------------------------------- */

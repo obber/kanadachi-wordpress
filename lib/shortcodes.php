@@ -2,19 +2,19 @@
 
 /**
  *
- *  Code Block Shortcode
+ *  Colored Notes Shortcodes
  *
  */
-function codeBlock($params, $content = null) {
+function noteBlock($params, $content = null) {
 
   // default parameters
   extract(shortcode_atts(array(
-    'lang' => 'javascript'
+    'color' => ''
     ), $params));
 
   return
-    '<pre><code class="'
-    . ($lang == '' ? '">' : "$lang\">")
-    . "$content" . "</code></pre>";
+    '<div class="note note-'
+    . ($color == '' ? '">' : "$color\">")
+    . "$content" . "</div>";
 }
-add_shortcode('code', 'codeBlock');
+add_shortcode('note', 'noteBlock');
