@@ -30,6 +30,9 @@ function wintersong_enqueue_scripts() {
 	
 }
 
+//* Add custom shortcodes
+include('lib/shortcodes.php');
+
 //* Add support for custom header
 add_theme_support( 'custom-header', array(
 	'admin-preview-callback' => 'wintersong_admin_header_callback',
