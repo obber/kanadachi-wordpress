@@ -12,7 +12,7 @@ load_child_theme_textdomain( 'wintersong', apply_filters( 'child_theme_textdomai
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', __( 'Wintersong Pro Theme', 'wintersong' ) );
 define( 'CHILD_THEME_URL', 'http://my.studiopress.com/themes/wintersong/' );
-define( 'CHILD_THEME_VERSION', '1.2' );
+define( 'CHILD_THEME_VERSION', '1.3' );
 
 //* Add HTML5 markup structure
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
