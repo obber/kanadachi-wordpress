@@ -854,6 +854,7 @@ Site Header
 --------------------------------------------- */
 
 .site-header .site-title {
+	font-family: "ff-tisa-web-pro", Georgia, serif;
 	font-size: 30px;
 	line-height: 1;
 	margin-bottom: 15px;
@@ -1411,19 +1412,24 @@ Site Footer
 Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1036px) {
+
+	.site-header {
+		left: 0px;
+	}
 
 	.site-container {
 		width: 860px;
 	}
 
 	.site-inner {
-		width: 700px;
+		width: 680px;
+		margin-left: 260px;
 	}
 
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 953px) {
 
 	.genesis-nav-menu li,
 	.site-container,
