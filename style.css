@@ -1082,7 +1082,8 @@ Content Area
 
 .entry-content ol,
 .entry-content p,
-.entry-content ul {
+.entry-content ul,
+.entry-content pre {
 	margin-bottom: 26px;
 }
 
