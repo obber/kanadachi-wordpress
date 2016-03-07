@@ -130,7 +130,7 @@ body {
 	color: #000;
 	font-family: "proxima-nova", sans-serif;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.625;
 }
 
@@ -180,11 +180,11 @@ p {
 }
 
 a {
-	font-weight: 400;
+	font-weight: 300;
 }
 
 strong {
-	font-weight: 600;
+	font-weight: 500;
 }
 
 ol,
@@ -232,7 +232,7 @@ h5,
 h6 {
 	color: #000;
 	font-family: "proxima-nova",sans-serif;
- 	font-weight: 400;
+ 	font-weight: 300;
 	line-height: 1.2;
 	margin: 0 0 16px;
 }
@@ -358,7 +358,7 @@ textarea {
 	color: #000;
 	font-family: "proxima-nova", sans-serif;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 300;
 	margin: 12px 0;
 	padding: 10px;
 	width: 100%;
@@ -396,7 +396,7 @@ input[type="submit"],
 	cursor: pointer;
 	font-family: 'proxima-nova', sans-serif;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 300;
 	padding: 15px;
 	text-transform: uppercase;
 	width: auto;
@@ -442,7 +442,7 @@ td {
 }
 
 th {
-	font-weight: 400;
+	font-weight: 300;
 	text-transform: uppercase;
 }
 
@@ -637,7 +637,7 @@ img.alignright,
 
 .entry-content .wp-caption-text {
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 500;
 	margin-bottom: 0;
 	text-align: center;
 }
@@ -688,7 +688,7 @@ img.alignright,
 	color: #000;
 	font-family: "proxima-nova",sans-serif;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 300;
 	margin-bottom: 4px;
 }
 
@@ -707,7 +707,7 @@ img.alignright,
 .entry-title a {
 	border: none;
 	color: #000;
- 	font-weight: 400;
+ 	font-weight: 300;
 }
 
 .entry-title a:hover {
@@ -863,7 +863,7 @@ Site Header
 .site-title a,
 .site-title a:hover {
 	color: #000;
-	font-weight: 400;
+	font-weight: 300;
 	text-decoration: none;
 }
 
@@ -888,7 +888,7 @@ Site Navigation
 
 .genesis-nav-menu {
 	clear: both;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.5;
 	width: 100%;
 }
@@ -901,7 +901,7 @@ Site Navigation
 .genesis-nav-menu a {
 	border: none;
 	display: block;
-	font-weight: 400;
+	font-weight: 300;
 	padding: 10px 20px;
 	position: relative;
 }
@@ -1116,7 +1116,7 @@ Content Area
 .entry-meta a {
 	border: none;
 	color: #999;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 .entry-meta a:hover {
@@ -1235,7 +1235,7 @@ Content Area
 	display: inline-block;
 	font-family: 'proxima-nova', sans-serif;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 300;
 	padding: 8px 12px;
 	text-transform: uppercase;
 }
@@ -1388,7 +1388,7 @@ Site Footer
 
 .site-footer a {
 	border: none;
-	font-weight: 400;
+	font-weight: 300;
 	color: #999;
 }
 
