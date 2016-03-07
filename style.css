@@ -129,7 +129,7 @@ body {
 	background-color: #fff;
 	color: #000;
 	font-family: "jaf-facitweb", sans-serif;
-	font-size: 16px;
+	font-size: 17px;
 	font-weight: 300;
 	line-height: 1.5;
 }
@@ -235,9 +235,9 @@ h4,
 h5,
 h6 {
 	color: #000;
-	font-family: "jaf-facitweb",sans-serif;
+	font-family: "ff-tisa-web-pro",Georgia,serif;
  	font-weight: 300;
-	line-height: 1.2;
+	line-height: 1.4;
 	margin: 0 0 26px;
 }
 
@@ -461,14 +461,15 @@ Site Structure
 ---------------------------------------------------------------------------------------------------- */
 
 .site-container {
-	margin: 0 auto;
-	width: 860px;
+	margin: 0 0;
+	width: 960px;
 }
 
 .site-inner {
-	float: right;
+	display: inline-block;
 	padding: 60px 0;
-	width: 600px;
+	margin-left: 330px;
+	max-width: 700px;
 }
 
 .wintersong-landing .site-inner {
@@ -743,7 +744,7 @@ Widgets
 .featured-content .entry-title {
 	border: none;
 	font-size: 24px;
-	line-height: 1.2;
+	line-height: 1.4;
 }
 
 .featured-content .entry-title a {
@@ -803,11 +804,13 @@ Site Header
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	float: left;
+	display: inline-block;
+	left: 40px;
 	padding-top: 60px;
 	position: fixed;
 	text-align: center;
-	width: 220px;
+	width: 250px;
+	font-size: 15px;
 }
 
 .site-header p {
@@ -851,7 +854,6 @@ Site Header
 --------------------------------------------- */
 
 .site-header .site-title {
-	font-family: "jaf-facitweb", sans-serif;
 	font-size: 30px;
 	line-height: 1;
 	margin-bottom: 15px;
@@ -1412,16 +1414,16 @@ Media Queries
 @media only screen and (max-width: 1024px) {
 
 	.site-container {
-		width: 760px;
+		width: 860px;
 	}
 
 	.site-inner {
-		width: 600px;
+		max-width: 700px;
 	}
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 860px) {
 
 	.genesis-nav-menu li,
 	.site-container,
@@ -1434,6 +1436,11 @@ Media Queries
 	.site-header,
 	.site-inner {
 		width: 100%;
+	}
+
+	.site-inner {
+		display: block;
+		margin: auto;
 	}
 
 	.site-header {
@@ -1539,7 +1546,7 @@ Media Queries
 	}
 
 	.site-inner {
-		padding: 30px 10%;
+		padding: 30px 20px;
 	}
 
 	.site-footer {
