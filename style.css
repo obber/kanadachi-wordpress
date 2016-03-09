@@ -218,11 +218,11 @@ cite {
 }
 
 code {
-	font-size: 14px;
+	font-size: 16px;
 }
 
-p code {
-	font-size: 16px;
+pre code {
+	font-size: 14px;
 }
 
 /* Headings
