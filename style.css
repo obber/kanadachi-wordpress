@@ -128,7 +128,7 @@ Defaults
 body {
 	background-color: #fff;
 	color: #000;
-	font-family: "jaf-facitweb", sans-serif;
+	font-family: "jaf-bernino-sans", sans-serif;
 	font-size: 17px;
 	font-weight: 300;
 	line-height: 1.5;
@@ -235,7 +235,7 @@ h4,
 h5,
 h6 {
 	color: #000;
-	font-family: "jaf-bernino-sans",Georgia,serif;
+	font-family: "ff-tisa-web-pro",Georgia,serif;
  	font-weight: 300;
 	line-height: 1.4;
 	margin: 0 0 26px;
@@ -360,7 +360,7 @@ textarea {
 	border: 1px solid #ddd;
 	box-shadow: none;
 	color: #000;
-	font-family: "jaf-facitweb", sans-serif;
+	font-family: "jaf-bernino-sans", sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	margin: 12px 0;
@@ -691,7 +691,7 @@ img.alignright,
 
 .author-box-title {
 	color: #000;
-	font-family: "jaf-facitweb",sans-serif;
+	font-family: "jaf-bernino-sans",sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	margin-bottom: 4px;
@@ -854,7 +854,7 @@ Site Header
 --------------------------------------------- */
 
 .site-header .site-title {
-	font-family: "jaf-bernino-sans", Georgia, serif;
+	font-family: "ff-tisa-web-pro", Georgia, serif;
 	font-size: 30px;
 	line-height: 1;
 	margin-bottom: 15px;
