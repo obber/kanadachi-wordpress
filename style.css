@@ -235,7 +235,7 @@ h4,
 h5,
 h6 {
 	color: #000;
-	font-family: "ff-tisa-web-pro",Georgia,serif;
+	font-family: "jaf-bernino-sans",Georgia,serif;
  	font-weight: 300;
 	line-height: 1.4;
 	margin: 0 0 26px;
@@ -854,7 +854,7 @@ Site Header
 --------------------------------------------- */
 
 .site-header .site-title {
-	font-family: "ff-tisa-web-pro", Georgia, serif;
+	font-family: "jaf-bernino-sans", Georgia, serif;
 	font-size: 30px;
 	line-height: 1;
 	margin-bottom: 15px;
