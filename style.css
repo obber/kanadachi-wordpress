@@ -400,7 +400,7 @@ input[type="submit"],
 	border: none;
 	color: #fff;
 	cursor: pointer;
-	font-family: 'jaf-facitweb', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	padding: 15px;
@@ -947,7 +947,7 @@ Site Navigation
 	background-color: #fff;
 	border: 1px solid #eee;
 	border-top: none;
-	font-family: 'jaf-facitweb', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
 	font-size: 14px;
 	padding: 10px 20px;
 	position: relative;
@@ -1024,7 +1024,7 @@ Site Navigation
 .nav-primary {
 	background-color: #000;
 	color: #fff;
-	font-family: 'jaf-facitweb', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
 	margin-bottom: 30px;
 }
 
@@ -1117,7 +1117,7 @@ Content Area
 }
 
 .entry-meta {
-	font-family: 'jaf-facitweb', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
 	color: #999;
 }
 
@@ -1241,7 +1241,7 @@ Content Area
 	color: #000;
 	cursor: pointer;
 	display: inline-block;
-	font-family: 'jaf-facitweb', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	padding: 8px 12px;
@@ -1390,7 +1390,7 @@ Site Footer
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-	font-family: 'jaf-facitweb', sans-serif;
+	font-family: 'proxima-nova', sans-serif;
 	text-align: center;
 }
 
