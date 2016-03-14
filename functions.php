@@ -197,7 +197,7 @@ if ( ! function_exists('custom_post_type_lettering') ) {
 			'public'                => true,
 			'show_ui'               => true,
 			'show_in_menu'          => true,
-			'menu_position'         => 5,
+			'menu_position'         => 8,
 			'menu_icon'             => 'dashicons-format-image',
 			'show_in_admin_bar'     => true,
 			'show_in_nav_menus'     => true,
@@ -226,5 +226,104 @@ function lettering_archive_query( $query ) {
 		$query->set( 'posts_per_page', '6' );
 	}
 
+}
+
+
+//* Register custom post type: Toy Problems
+if ( ! function_exists('custom_post_type_toy_problems') ) {
+
+	add_action( 'init', 'custom_post_type_toy_problems', 0 );
+
+	function custom_post_type_toy_problems() {
+
+		$labels = array(
+			'name'                  => 'Toy Problems',
+			'singular_name'         => 'Toy Problem',
+			'menu_name'             => 'Toy Problems',
+			'name_admin_bar'        => 'Toy Problem',
+			'archives'              => 'Toy Problem Archives',
+			'parent_item_colon'     => 'Parent Toy Problem:',
+			'all_items'             => 'All Toy Problems',
+			'add_new_item'          => 'Add New Toy Problem',
+			'add_new'               => 'Add New',
+			'new_item'              => 'New Toy Problem',
+			'edit_item'             => 'Edit Toy Problem',
+			'update_item'           => 'Update Toy Problem',
+			'view_item'             => 'View Toy Problem',
+			'search_items'          => 'Search Toy Problems',
+			'not_found'             => 'Not found',
+			'not_found_in_trash'    => 'Not found in Trash',
+			'featured_image'        => 'Featured Image',
+			'set_featured_image'    => 'Set featured image',
+			'remove_featured_image' => 'Remove featured image',
+			'use_featured_image'    => 'Use as featured image',
+			'insert_into_item'      => 'Insert into post',
+			'uploaded_to_this_item' => 'Uploaded to this item',
+			'items_list'            => 'Items list',
+			'items_list_navigation' => 'Items list navigation',
+			'filter_items_list'     => 'Filter items list',
+		);
+		$args = array(
+			'label'                 => 'Toy Problems',
+			'description'           => 'Toy Problems and Solutions',
+			'labels'                => $labels,
+			'supports'              => array( 'title', 'editor', 'genesis_seo', 'thumbnail', 'excerpt'),
+			'taxonomies'            => array( 'category', 'post_tag' ),
+			'hierarchical'          => false,
+			'public'                => true,
+			'show_ui'               => true,
+			'show_in_menu'          => true,
+			'menu_position'         => 4,
+			'menu_icon'             => 'dashicons-star-filled',
+			'show_in_admin_bar'     => true,
+			'show_in_nav_menus'     => true,
+			'can_export'            => true,
+			'has_archive'           => true,
+			'exclude_from_search'   => false,
+			'publicly_queryable'    => true,
+			'capability_type'       => 'post',
+		);
+		register_post_type( 'toyproblems', $args );
+	}
+}
+
+add_action( 'pre_get_posts', 'toyproblems_archive_query' );
+/**
+ * Posts_per_page workaround for toyproblems archive
+ * 
+ * @author Bill Erickson
+ * @link http://www.billerickson.net/customize-the-wordpress-query/
+ * @param object $query data
+ *
+ */
+function toyproblems_archive_query( $query ) {
+
+	if( $query->is_main_query() && $query->is_post_type_archive( 'toyproblems' ) && !is_admin() ) {
+
+		// set number of posts
+		$query->set( 'posts_per_page', '5' );
+
+		// 
+
+	}
+
+}
+
+add_action('genesis_before_loop','toy_problems_conditional');
+/**
+* Remove post meta and post info on single post type.
+*/
+function toy_problems_conditional() {
+	if (is_singular('toyproblems')) { //Replace post_type with your post type slug
+
+		// remove date
+		remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+
+		// add 'Toy Problems' to top right
+		add_filter('genesis_post_title_text', 'add_category_text_float');
+		function add_category_text_float() {
+			return get_the_title() . '<span class="toy-problem-title">Toy Problem</span>';
+		}
+	}
 }
 
