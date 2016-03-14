@@ -327,3 +327,7 @@ function toy_problems_conditional() {
 	}
 }
 
+add_action('init', 'add_markdown_support_toyproblems');
+function add_markdown_support_toyproblems() {
+    add_post_type_support( 'toyproblems', 'wpcom-markdown' );
+}
