@@ -267,7 +267,7 @@ if ( ! function_exists('custom_post_type_toy_problems') ) {
 			'label'                 => 'Toy Problems',
 			'description'           => 'Toy Problems and Solutions',
 			'labels'                => $labels,
-			'supports'              => array( 'title', 'editor', 'genesis_seo', 'thumbnail', 'excerpt'),
+			'supports'              => array( 'title', 'editor', 'genesis_seo', 'thumbnail', 'excerpt', 'wpcom-markdown'),
 			'taxonomies'            => array( 'category', 'post_tag' ),
 			'hierarchical'          => false,
 			'public'                => true,
@@ -325,9 +325,4 @@ function toy_problems_conditional() {
 			return get_the_title() . '<span class="toy-problem-title">Toy Problem</span>';
 		}
 	}
-}
-
-add_action('init', 'add_markdown_support_toyproblems');
-function add_markdown_support_toyproblems() {
-    add_post_type_support( 'toyproblems', 'wpcom-markdown' );
 }
