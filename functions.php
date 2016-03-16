@@ -25,6 +25,7 @@ add_action( 'wp_enqueue_scripts', 'wintersong_enqueue_scripts' );
 function wintersong_enqueue_scripts() {
 
 	wp_enqueue_script( 'wintersong-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
+	wp_enqueue_script( 'wintersong-custom-js', get_bloginfo( 'stylesheet_directory' ) . '/js/toyproblems.js', array( 'jquery' ), '1.0.0' );
 	wp_enqueue_style( 'google-font-roboto-mono', '//fonts.googleapis.com/css?family=Roboto+Mono:400,700', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'dashicons' );
 	
