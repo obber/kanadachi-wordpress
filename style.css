@@ -1339,6 +1339,17 @@ Custom Post Types
 	float: right;
 }
 
+.tplink {
+
+}
+
+.tplink.active span {
+	display: inline-block;
+	-ms-transform: rotate(-180deg); /* IE 9 */
+	-webkit-transform: rotate(-180deg); /* Chrome, Safari, Opera */
+	transform: rotate(-180deg);
+}
+
 /*
 Comments
 ---------------------------------------------------------------------------------------------------- */
