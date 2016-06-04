@@ -3,12 +3,11 @@ jQuery(function( $ ){
 	$(document).ready(function() {
 
 		// hints and solutions
-		var $hints = $('.hints').nextUntil('p.tplink-stop');
-		var $solution = $('.solution').nextAll();
+		var $hints = $('.hints');
+		var $solution = $('.solution');
 
-		// append to respective areas & hide
-		$('.hints').append($hints);
-		$('.solution').append($solution);
+		$('.hints > p:first-child, .solution > p:first-child').remove();
+
 		$('.hints, .solution').hide();
 
 		$('.tplink').click(function(e) {

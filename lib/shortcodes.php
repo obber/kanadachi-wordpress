@@ -28,7 +28,8 @@ function tpHints($params, $content = null) {
 
   return
     '<p class="tplink-stop"><a href="" class="tplink" id="hints"><span>&#8595;</span> View Hints</a></p>'
-    . '<div class="hints"></div>';
+    . '<div class="hints">'
+    . "$content" . "</div>";
 }
 add_shortcode('hints', 'tpHints');
 
@@ -36,7 +37,8 @@ function tpSolutions($params, $content = null) {
 
   return
     '<p class="tplink-stop"><a href="" class="tplink" id="solution"><span>&#8595;</span> View Solution</a></p>'
-    . '<div class="solution"></div>';
+    . '<div class="solution">'
+    . "$content" . "</div>";
 }
 add_shortcode('solution', 'tpSolutions');
 
