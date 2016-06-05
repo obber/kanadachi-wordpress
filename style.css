@@ -1265,15 +1265,7 @@ Content Area
 	margin-bottom: 26px;
 }
 
-.note p:first-child {
-	display: none;
-}
-
-.note p:last-child {
-	display: none;
-}
-
-.note > *:nth-last-child(2) {
+.note > *:last-child {
 	margin-bottom: 0;
 }
 
