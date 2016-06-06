@@ -4,8 +4,8 @@ jQuery(function( $ ){
 
 		// // remove unnecessary breaks for code blocks
 		// $('pre > code > br:first-child, pre > code > br:last-child').remove();
-		$('.custom-sc').each(function() {
-			$(this).text($(this).text().replace(/^\s+/g, ''));
+		$('pre code').each(function() {
+			$(this).html($(this).html().replace(/^\s+/g, ''));
 		});
 
 		// hints and solutions

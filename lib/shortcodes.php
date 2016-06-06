@@ -21,25 +21,6 @@ add_shortcode('note', 'noteBlock');
 
 /**
  *
- *  Code Block Shortcodes
- *
- */
-function codeBlock($params, $content = null) {
-
-  // default parameters
-  extract(shortcode_atts(array(
-    'lang' => 'javascript'
-    ), $params));
-
-  return
-    '<pre><code class="sc custom-sc hljs '
-    . ($lang == '' ? '">' : "$lang\">")
-    . "$content" . "</pre></code>";
-}
-add_shortcode('c', 'codeBlock');
-
-/**
- *
  *  Toy Problem Hints & Solution Shortcodes
  *
  */
