@@ -228,8 +228,8 @@ code[class*="language-"] {
 
 pre {
 	overflow-x: auto;
-	border-top: 1px dotted #000;
-	border-bottom: 1px dotted #000;
+	border-top: 1px dotted #929292;
+	border-bottom: 1px dotted #929292;
 	padding: 25px 0;
 }
 
