@@ -233,6 +233,15 @@ pre {
 	padding: 25px 0;
 }
 
+div.prism-show-language > div.prism-show-language-label {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #D8D8D8!important;
+	font-size: 22px!important;
+	top: 8px!important;
+	right: -3px!important;
+}
+
 /* Headings
 --------------------------------------------- */
 
