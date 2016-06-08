@@ -219,7 +219,7 @@ cite {
 
 code {
 	font-size: 15px;
-	background-color: #f5f5f5;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 }
 
 code[class*="language-"] {
