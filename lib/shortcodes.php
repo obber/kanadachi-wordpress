@@ -35,9 +35,17 @@ add_shortcode('hints', 'tpHints');
 
 function tpSolutions($params, $content = null) {
 
+  // default parameters
+  extract(shortcode_atts(array(
+    'id' => 0
+    ), $params));
+
   return
-    '<p class="tplink-stop"><a href="" class="tplink" id="solution"><span>&#8595;</span> View Solution</a></p>'
-    . '<div class="sc solution">'
+    '<p class="tplink-stop"><a href="" class="tplink" id="solution-'
+    . ($id == '' ? '">' : "$id\">")
+    . '<span>&#8595;</span> View Solution</a></p>'
+    . '<div class="sc solution" id="solution-'
+    . ($id == '' ? '">' : "$id\">")
     . do_shortcode("$content") . "</div>";
 }
 add_shortcode('solution', 'tpSolutions');

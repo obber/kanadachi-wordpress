@@ -26,7 +26,7 @@ jQuery(function( $ ){
 			e.preventDefault();
 			var linkname = $(this).attr("id");
 			// slide toggle
-			$('.' + linkname).slideToggle();
+			$('.sc.solution#' + linkname).slideToggle();
 			$(this).toggleClass('active');
 		});
 
