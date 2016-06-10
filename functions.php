@@ -131,6 +131,14 @@ function wintersong_remove_comment_form_allowed_tags( $defaults ) {
 
 }
 
+//* Remove comment label in post info under title
+add_filter( 'genesis_post_info', 'sp_post_info_filter' );
+function sp_post_info_filter($post_info) {
+if ( !is_page() ) {
+	$post_info = '[post_date] by [post_author_posts_link] [post_edit]';
+	return $post_info;
+}}
+
 //* Originally for repositioning footer, commented out to have no footer.
 //* Reposition the footer
 remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
