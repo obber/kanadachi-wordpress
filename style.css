@@ -226,6 +226,13 @@ code[class*="language-"] {
 	line-height: 1.4;
 }
 
+p > code {
+  background-color: #fbfbfb;
+  padding: 1px 3px;
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
+}
+
 pre {
 	overflow-x: auto;
 	border-top: 1px dotted #929292;
