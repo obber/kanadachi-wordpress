@@ -223,7 +223,7 @@ code {
 }
 
 code[class*="language-"] {
-	line-height: 1.4;
+	line-height: 1.4!important;
 }
 
 p > code {
