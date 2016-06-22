@@ -478,6 +478,12 @@ td {
 	padding: 6px 0;
 }
 
+.center-text td {
+	border: 1px solid #ddd;
+	text-align: center;
+	min-width: 1em;
+}
+
 
 /*
 Site Structure
