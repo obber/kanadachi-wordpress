@@ -11,6 +11,12 @@
 Template Name: Landing
 */
 
+//* Add a simple link to homepage
+add_action( 'genesis_before_entry', 'add_custom_header_to_landing' );
+function add_custom_header_to_landing() {
+  echo '<p class="landing-header"><a href="' . get_site_url() . '">Home</a></p>';
+}
+
 //* Add landing body class to the head
 add_filter( 'body_class', 'wintersong_add_body_class' );
 function wintersong_add_body_class( $classes ) {
